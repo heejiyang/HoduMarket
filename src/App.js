@@ -1,8 +1,13 @@
-function App() {
+import { BrowserRouter } from 'react-router-dom';
+
+const App = () => {
   return (
-    <div>
-      hello world
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/login' element={login} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
+
 export default App;
