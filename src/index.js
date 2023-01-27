@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 import App from './App';
+import ProductList from './common/productList/ProductList.Style';
 import GlobalStyled from './styles/Globalstyled';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
