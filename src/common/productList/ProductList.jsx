@@ -1,20 +1,21 @@
 import React from 'react';
-import ProductList from './ProductList.Style';
+import * as S from './ProductList.Style';
 
-const ProductList = ({ locationData }) => {
-  const [imageData, setImageData] = useState([]);
+const ProductList = () => {
+  // const [imageData, setImageData] = useState([]);
+  // const price = data.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
   return (
     <S.ProductWrapper>
-      <img src={`${data.image}`} alt='상품 이미지' />
-      <ul>
-        <li className='store-tit'>{data.store_name}</li>
-        <li className='product-name'>{data.produce_name}</li>
+      <S.ProductImg src='' alt='상품 이미지' />
+      <S.ProductTxt>
+        <li className='store-tit'>storename</li>
+        <li className='product-name'>productname</li>
         <li className='product-price'>
-          {price}
+          price
           <span>원</span>
         </li>
-      </ul>
+      </S.ProductTxt>
     </S.ProductWrapper>
   );
 };
