@@ -6,11 +6,11 @@ const instance = axios.create({
   baseUrl: apiUrl,
 });
 
-export const getProductData = async () => {
-  try {
-    const response = await instance.get('mail');
-    return response.data;
-  } catch (error) {
-    console.log(error);
-  }
-};
+// export const getProductData = async () => {
+//   try {
+//     const response = await instance.get('mail');
+//     return response.data;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };

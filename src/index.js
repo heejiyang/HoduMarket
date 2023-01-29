@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 import App from './App';
-import ProductList from './common/productList/ProductList.Style';
 import GlobalStyled from './styles/Globalstyled';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <React.StrictMode>
     <RecoilRoot>
       <GlobalStyled />
       <App />
     </RecoilRoot>
-  </BrowserRouter>,
+  </React.StrictMode>,
 );
